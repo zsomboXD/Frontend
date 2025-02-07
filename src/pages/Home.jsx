@@ -9,7 +9,7 @@ export const Home = () => {
       <div className="text-center mt-5">
         <h1>Welcome to workoutWise</h1>
         <p>Your ultimate fitness goal tracker.</p>
-        <Button color="primary" href="/signup">Get Started</Button>
+        <Button color="primary" href="/auth">Get Started</Button>
       </div>
     </div>
   );
