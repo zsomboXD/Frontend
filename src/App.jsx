@@ -7,12 +7,14 @@ import { Auth } from './pages/Auth';
 import { PwReset } from './pages/PwReset';
 import { MyProfile } from './pages/MyProfile';
 import { DeleteAccount } from './pages/DeleteAccount';
+import About from './pages/About';
 
 const router=createBrowserRouter([
   {
     children:[
       {path:'/',element:<Home />},
       {path:'/signup',element:<SignUp />},
+      {path:'/about',element:<About />},
       {path:'/auth/in',element:<Auth />},
       {path:'/auth/up',element:<Auth />},
       {path:'/pwreset',element:<PwReset />},

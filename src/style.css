@@ -1,5 +1,157 @@
+body{
+  background-color: #0d0d0d;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+}
+.homepage-container {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #0d0d0d;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.about-container {
+font-family: 'Arial', sans-serif;
+color: #fff; 
+background-color: #000; 
+padding: 20px; 
+margin: 0;
+text-align: center;
+}
+
+.hero-title {
+color: #007bff; 
+}
+
+.lead {
+color: #fff; 
+}
+
+.features-title, .mission-title, .contact-title {
+color: #007bff; 
+}
+
+.list-group-item {
+background-color: #007bff;
+color: #fff;
+}
+
+.list-group-item:hover {
+background-color: #0056b3;
+}
+
+
+.hero-section {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(135deg, #1a1a1a, #333);
+padding: 2rem;
+}
+
+.hero-content {
+max-width: 800px;
+}
+
+.hero-title {
+font-size: 4rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+font-size: 1.5rem;
+margin-bottom: 2rem;
+color: #ccc;
+}
+
+.hero-button {
+padding: 1rem 3rem;
+font-size: 1.25rem;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+background-color: #007bff;
+color: #fff;
+transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+background-color: #0056b3;
+transform: scale(1.05);
+}
+
+.features-section {
+display: flex;
+justify-content: space-around;
+padding: 5rem 2rem;
+background-color: #1a1a1a;
+}
+
+.feature {
+max-width: 300px;
+text-align: left;
+}
+
+.feature h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.feature p {
+font-size: 1.2rem;
+color: #ccc;
+}
+
+.cta-section {
+background-color: #007bff;
+padding: 4rem 2rem;
+}
+
+.cta-section h2 {
+font-size: 3rem;
+margin-bottom: 2rem;
+}
+
+.cta-section button {
+padding: 1rem 3rem;
+font-size: 1.5rem;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+background-color: #0056b3;
+color: #fff;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.cta-section button:hover {
+background-color: #003d80;
+transform: scale(1.1);
+}
+.cta-section {
+background-image: url('https://res.cloudinary.com/paksiblog13/image/upload/v1740740373/gym_vjww4y.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 50px;
+text-align: center;
+}
+
+.cta-section h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.cta-section .btn {
+font-size: 1.25rem;
+padding: 15px 30px;
+}
