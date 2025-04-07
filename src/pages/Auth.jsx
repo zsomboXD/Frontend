@@ -5,6 +5,7 @@ import { Button, FormGroup, Input, Label } from 'reactstrap'
 import { UserContext } from '../context/UserContext'
 import { Toastify } from '../components/Toastify'
 import { midleStyle } from '../utils'
+import { Header } from '../components/Header'
 
 
 export const Auth = () => {
@@ -33,7 +34,9 @@ console.log(msg);
  console.log(user);
   
   return (
+
     <div className='page'>
+          <Header/>
      <div style={midleStyle}>
       <h3>{isSignIn ? 'Bejelentkezés' : 'Regisztráció'}</h3>
       <Form onSubmit={handleSubmit}>

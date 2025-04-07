@@ -6,6 +6,7 @@ import { UserContext } from "../context/UserContext";
 import { extractUrlAndId } from "../utility/utils";
 import { Outlet, NavLink } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
+import { border } from "@cloudinary/url-gen/qualifiers/background";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,14 +18,14 @@ export const Header = () => {
     !user && setAvatar(null);
   }, [user, user?.photoURL]);
 
-  const fokep = "https://res.cloudinary.com/paksiblog13/image/upload/v1736880697/noFilter_uatjfq.png";
+  const fokep = "https://res.cloudinary.com/paksiblog13/image/upload/v1743165129/logo_rz64b3.jpg";
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
-      <Navbar fixed='top' expand="md" className="menu shadow-sm" style={{ borderBottom: '2px solid #ddd', backgroundColor: '#f8f9fa' }}>
-        <NavbarBrand href="/">
-          <img alt="Brand Logo" style={{ width: '120px', height: '36px', objectFit: 'cover' }} />
+      <Navbar fixed='top' expand="md" className="menu shadow-sm" style={{ borderBottom: '2px solid #ddd', backgroundColor: '#f8f9fa'}}>
+        <NavbarBrand href="/" style={{paddingLeft:'30px',overflow:'hidden'}}>
+          <img src={fokep} alt="Brand Logo" style={{ width: '58px', height:' 58px', objectFit: 'cover', borderRadius: '25%' , border:'solid 1px black'}} />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
