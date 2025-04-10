@@ -6,7 +6,6 @@ import { UserContext } from "../context/UserContext";
 import { extractUrlAndId } from "../utility/utils";
 import { Outlet, NavLink } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
-import { border } from "@cloudinary/url-gen/qualifiers/background";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +34,12 @@ export const Header = () => {
             </NavItem>
             <NavItem>
               <NavLink className="nav-link" to='/about'>About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to='/categories'>Categories</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to='/tips'>Tips & Ideas</NavLink>
             </NavItem>
             {user &&
               <NavItem>

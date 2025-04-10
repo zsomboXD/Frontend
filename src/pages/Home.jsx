@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import { Header } from '../components/Header';
 import '../style.css';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
@@ -17,7 +18,7 @@ export const Home = () => {
 
       <section className="cta-section">
         <h2>Ready to Get Fit?</h2>
-        <Button color="success" size="lg" href="/auth">Join Now</Button>
+        <Link to = "/Signup"> <Button color="success" size="lg" >Join Now</Button></Link>
       </section>
 
       <section className="features-section">
