@@ -41,6 +41,9 @@ export const Header = () => {
             <NavItem>
               <NavLink className="nav-link" to='/tips'>Tips & Ideas</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to='/quotes'>Motivation</NavLink>
+            </NavItem>
             {user &&
               <NavItem>
                 <NavLink className="nav-link" to='/create'>New Post</NavLink>

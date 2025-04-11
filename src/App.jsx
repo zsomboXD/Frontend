@@ -12,7 +12,7 @@ import Categories from './pages/Categories';
 import CategoryPageMen from './pages/CategoryPageMen';
 import CategoryPageWomen from './pages/CategoryPageWomen';
 import { Tips } from './pages/Tips';
-
+import { Quotes } from './pages/Quotes';
 
 
 const router=createBrowserRouter([
@@ -29,7 +29,8 @@ const router=createBrowserRouter([
       {path:'/categories',element:<Categories />},
       {path:'/categorypagemen',element:<CategoryPageMen />},
       {path:'/categorypagewomen',element:<CategoryPageWomen />},
-      {path:'/tips',element:<Tips />}
+      {path:'/tips',element:<Tips />},
+      {path:'/quotes',element:<Quotes />}
     ]
   }
 ],

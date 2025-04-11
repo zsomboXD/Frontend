@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../style.css';
 import { Header } from '../components/Header';
 
@@ -93,6 +93,15 @@ export const Tips = () => {
 
   return (
     <div className="min-h-screen flex justify-center items-center px-4 py-10" style={{ backgroundColor: '#1a1a1a' }}>
+
+      <Link
+        to="/" 
+        className="absolute top-4 left-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        style={{ fontSize: '40px', textDecoration: 'none' }}
+      >
+        &#8592; Return
+      </Link>
+
       <div className="w-full max-w-5xl pl-1">
         <h1 className="text-4xl font-bold mb-12 text-center" style={{ color: '#007bff' }}>
           💡 Workout Tips & FAQs
