@@ -1,55 +1,69 @@
-🌟 Website Overview Our website is built around three key ideas:
+🏋️‍♂️ Edzés Motiváció és Gyakorlati Útmutató Weboldal
+Üdvözölünk az Edzés Motiváció és Gyakorlati Útmutató weboldalon!
+Ez az oldal azért jött létre, hogy segítsen Neked motivált maradni, erősebbé válni, és profi útmutatással támogatni a fejlődésedet az edzőtermi utadon. Legyél akár teljesen kezdő, akár tapasztalt sportoló, itt megtalálod, ami ahhoz kell, hogy elérd a céljaidat!
 
-Motivation — to help you stay consistent and strong, both mentally and physically.
+🌟 Az oldal bemutatása
+Weboldalunk három fő pillérre épül:
 
-Knowledge — to guide you with expert-approved gym exercises and tips.
+Motiváció – hogy kitartó és erős maradj, mentálisan és fizikailag egyaránt.
 
-Community — to support your growth and progress through shared experiences.
+Tudás – szakértők által összeállított gyakorlatokkal és tippekkel vezetünk végig az úton.
 
-🗂️ Pages & Features 🏠 Home Page A quick introduction to the website and what you can expect.
+Közösség – ahol támogatást és inspirációt kapsz mások tapasztalatain keresztül.
 
-User registration and login to track your personal exercise progress.
+🗂️ Oldalak és Funkciók
+🏠 Főoldal
+Rövid betekintést nyújt abba, miről is szól az oldal.
 
-Start your fitness journey with a few clicks!
+Itt tudsz regisztrálni vagy bejelentkezni a fiókodba.
 
-💡 About Page Learn more about the mission behind our website.
+A fiókod segítségével nyomon követheted az edzéseidet és fejlődésedet!
 
-Get in touch with us if you need support, advice, or just want to share feedback.
+💡 Rólunk Oldal
+Megismerheted, hogy mi a küldetésünk ezzel a weboldallal.
 
-💪 Categories Page Find workouts categorized for:
+Ha kérdésed vagy problémád van, itt könnyen felveheted velünk a kapcsolatot.
 
-Men's Exercises
+💪 Kategóriák Oldal
+Két fő kategóriában találhatsz edzésgyakorlatokat:
 
-Women's Exercises
+Férfiaknak szóló gyakorlatok
 
-Each exercise is accompanied by a professional video demonstration.
+Nőknek szóló gyakorlatok
 
-Videos are presented by experienced personal trainers, showing you each movement step-by-step to help you master the form.
+Minden gyakorlathoz profi személyi edzők által készített videós bemutató tartozik.
 
-🧠 Tips & Ideas Page A collection of helpful tips and ideas about gym life and training.
+A videók lépésről-lépésre mutatják be a helyes végrehajtást, hogy biztosan jól sajátítsd el a mozdulatokat.
+🧠 Tippek és Ötletek Oldal
+Rengeteg hasznos tipp és ötlet vár, amelyek segítenek eligazodni az edzőtermi életben.
 
-Browse through common questions and answers — think of it like a FAQ for all things fitness.
+GYIK-jellegű (Gyakran Ismételt Kérdések) tartalmak is elérhetők, ha elbizonytalanodnál valamiben.
 
-Stay informed and avoid common mistakes!
+Segít elkerülni a gyakori hibákat és hatékonyabbá teszi az edzéseidet!
 
-🔥 Motivation Page Motivation is the fuel for success in any fitness journey.
+🔥 Motiváció Oldal
+Az erő és egészség kulcsa: a MOTIVÁCIÓ.
 
-Browse through powerful motivational quotes from real professional bodybuilders who have been where you are.
+Itt inspiráló idézeteket találsz olyan profi testépítőktől, akik saját bőrükön tapasztalták meg az utat, amin most Te is jársz.
 
-Hit the Next Quote button to load more inspiration.
+A „Következő Idézet” gombbal újabb és újabb motivációs gondolatokat olvashatsz.
 
-See photos and stories of the people behind the quotes.
+Minden idézethez tartozik egy kép is, hogy lásd, kik a szavak mögött álló példaképek.
 
-🚀 Future Plans Add more exercise videos.
+🚀 Jövőbeli tervek
+Több edzésvideó feltöltése.
 
-Expand the motivational quote library.
+Motivációs idézetek bővítése.
 
-Add personalized workout tracking and analytics.
+Egyéni edzésterv-követő és statisztika modul fejlesztése.
 
-Build a community forum for gym lovers to connect.
+Közösségi fórum létrehozása, ahol a sportolók segíthetik egymást.
 
-🤝 Contributing We welcome contributions! If you have ideas for new features, exercises, motivational quotes, or improvements, feel free to submit a pull request or open an issue.
+🤝 Közreműködés
+Örömmel fogadunk mindenféle hozzájárulást!
+Ha van ötleted új funkcióra, edzésgyakorlatokra, motivációs idézetekre vagy bármilyen fejlesztésre, nyugodtan küldj Pull Requestet vagy nyiss egy Issue-t.
 
-📫 Contact If you need any help or just want to give feedback, head over to the About Page on the website or open an issue here on GitHub.
+📫 Kapcsolat
+Ha segítségre van szükséged vagy szeretnél visszajelzést adni, látogasd meg a weboldalon a Rólunk oldalt, vagy nyiss egy Issue-t itt a GitHub-on.
 
-💪 Stay strong. Stay motivated. Let’s get better — together!
+💪 Maradj erős. Maradj motivált. Haladjunk együtt előre!
