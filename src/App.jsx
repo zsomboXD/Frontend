@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Home } from './pages/Home'
@@ -12,6 +11,10 @@ import Categories from './pages/Categories';
 import CategoryPageMen from './pages/CategoryPageMen';
 import CategoryPageWomen from './pages/CategoryPageWomen';
 import { Tips } from './pages/Tips';
+import { Quotes } from './pages/Quotes';
+import { AddEditPost } from './pages/AddEditPost';
+import { Posts } from './pages/Posts';
+import { Detail } from './pages/Detail';
 
 
 
@@ -21,6 +24,9 @@ const router=createBrowserRouter([
       {path:'/',element:<Home />},
       {path:'/signup',element:<SignUp />},
       {path:'/about',element:<About />},
+      {path:'/create',element:<AddEditPost />},
+      {path:'/update/:id',element:<AddEditPost/>},
+      {path:'/detail/:id',element:<Detail/>},
       {path:'/auth/in',element:<Auth />},
       {path:'/auth/up',element:<Auth />},
       {path:'/pwreset',element:<PwReset />},
@@ -29,7 +35,9 @@ const router=createBrowserRouter([
       {path:'/categories',element:<Categories />},
       {path:'/categorypagemen',element:<CategoryPageMen />},
       {path:'/categorypagewomen',element:<CategoryPageWomen />},
-      {path:'/tips',element:<Tips />}
+      {path:'/tips',element:<Tips />},
+      {path:'/quotes',element:<Quotes />},
+      {path:'/posts',element:<Posts />},
     ]
   }
 ],

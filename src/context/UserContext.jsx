@@ -9,12 +9,13 @@ import { useEffect } from 'react'
 
 export const UserContext=createContext()
 
-//const urlRedirect=/*'https://myblog-7535b.web.app/signin' */'http://localhost:5173/auth/in'
+//const urlRedirect='http://localhost:5173/auth/in'
 
 export const UserProvider=({children})=>{
     const [user,setUser]=useState(null)
     const [msg,setMsg]=useState({})//
 
+    
     useEffect(()=>{
        const unsubscribe= onAuthStateChanged(auth,(currentUser)=>{
             setUser(currentUser)

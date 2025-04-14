@@ -92,7 +92,6 @@ const WorkoutPage = () => {
           ))}
         </div>
 
-        {/* Video Container */}
         {selectedVideo && (
           <div
             style={{

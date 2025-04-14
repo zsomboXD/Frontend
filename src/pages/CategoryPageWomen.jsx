@@ -44,7 +44,7 @@ const WorkoutPage = () => {
           textAlign: 'center',
           width: '80%',
           maxWidth: '1200px',
-          marginTop: '80px', // Added top margin here
+          marginTop: '80px',
         }}
       >
         <h1 style={{ color: '#fff', fontSize: '4rem', marginBottom: '40px' }}>Workout Categories for Women</h1>
@@ -98,7 +98,6 @@ const WorkoutPage = () => {
           ))}
         </div>
 
-        {/* Video Modal */}
         {selectedVideo && (
                <div
                style={{

@@ -8,13 +8,13 @@ import { useEffect } from "react";
 export const CategContext=createContext()
 
 export const CategProvider=({children})=>{
-    const [categories,setCategories]=useState(null)
+    const [categories1,setCategories]=useState(null)
 
     useEffect(()=>{
         readCategories(setCategories)
     },[])
     return(
-        <CategContext.Provider value={{categories}}>
+        <CategContext.Provider value={{categories1}}>
             {children}
         </CategContext.Provider>
     )

@@ -14,3 +14,15 @@ export const uploadFile=async (file)=>{
         
     }
 }
+
+const url="https://backend-ekk0.onrender.com"
+
+
+export const delPhoto= async (id) => {
+  console.log(id);
+  try {
+    await axios.delete(url+'/post/'+id);
+  } catch (error) {
+    console.log(error);  
+  }    
+};

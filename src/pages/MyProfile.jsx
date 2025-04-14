@@ -6,6 +6,7 @@ import { uploadFile } from '../utility/uploadFile';
 import { extractUrlAndId } from '../utility/utils';
 import { BarLoader } from 'react-spinners';
 import { useNavigate } from 'react-router-dom';
+import { Header } from '../components/Header';
 
 export const MyProfile = () => {
   const { user, updateUser, msg } = useContext(UserContext);
@@ -54,6 +55,7 @@ export const MyProfile = () => {
         boxSizing: 'border-box',
       }}
     >
+      <Header />
       <div
         style={{
           width: '100%',

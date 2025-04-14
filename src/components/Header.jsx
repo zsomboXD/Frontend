@@ -41,10 +41,18 @@ export const Header = () => {
             <NavItem>
               <NavLink className="nav-link" to='/tips'>Tips & Ideas</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to='/quotes'>Quotes</NavLink>
+            </NavItem>      
             {user &&
+              <>
               <NavItem>
-                <NavLink className="nav-link" to='/create'>New Post</NavLink>
+                <NavLink className="nav-link" to='/create'>WorkOuts</NavLink>
               </NavItem>
+              <NavItem>
+                  <NavLink className="nav-link" to='/posts'>Posts</NavLink>
+                </NavItem>
+                </>
             }
           </Nav>
           <Nav navbar style={{ fontSize: '1.25rem' }}>
