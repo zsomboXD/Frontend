@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "start": "react-scripts start",
     "test": "vitest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@cloudinary/react": "^1.13.1",
@@ -21,7 +22,6 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^6.2.0",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.68",
     "@types/react-dom": "^17.0.21",
@@ -58,6 +58,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
