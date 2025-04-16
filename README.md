@@ -1,3 +1,7 @@
+A WEBOLDAL MÉG FEJLESZTÉS ÉS TESZTELÉS ALATT ÁL!!!
+
+[bozsombo@gmail.](https://workoutwise.netlify.app/)
+
 🏋️‍♂️ Edzés Motiváció és Gyakorlati Útmutató Weboldal
 Üdvözölünk az Edzés Motiváció és Gyakorlati Útmutató weboldalon!
 Ez az oldal azért jött létre, hogy segítsen Neked motivált maradni, erősebbé válni, és profi útmutatással támogatni a fejlődésedet az edzőtermi utadon. Legyél akár teljesen kezdő, akár tapasztalt sportoló, itt megtalálod, ami ahhoz kell, hogy elérd a céljaidat!
