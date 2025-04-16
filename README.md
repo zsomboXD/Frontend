@@ -1,6 +1,6 @@
 A WEBOLDAL MÉG FEJLESZTÉS ÉS TESZTELÉS ALATT ÁL!!!
 
-[bozsombo@gmail.](https://workoutwise.netlify.app/)
+[WEBOLDAL](https://workoutwise.netlify.app/)
 
 🏋️‍♂️ Edzés Motiváció és Gyakorlati Útmutató Weboldal
 Üdvözölünk az Edzés Motiváció és Gyakorlati Útmutató weboldalon!
