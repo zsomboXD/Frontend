@@ -1,22 +1,64 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../style.css';
+import React, { useState, useEffect } from 'react';
 import { Header } from '../components/Header';
+import '../style.css';
 
 const categories = [
-  { name: 'Bodyweight', url: 'https://www.youtube.com/embed/30PqX2zvK88' },
-  { name: 'AB Workouts', url: 'https://www.youtube.com/embed/BdhqubW1GJE' },
-  { name: 'Chest', url: 'https://www.youtube.com/embed/Epit6DSq_ww' },
-  { name: 'Legs', url: 'https://www.youtube.com/embed/q7rCeOa_m58' },
-  { name: 'Arms', url: 'https://www.youtube.com/embed/KIvTY1KqCH4' },
-  { name: 'Shoulder', url: 'https://www.youtube.com/embed/boUVD0pCGCk' },
-  { name: 'Back', url: 'https://www.youtube.com/embed/zgfcOWuTeYA' },
-  { name: 'Fat Loss', url: 'https://www.youtube.com/embed/_knIf9vF4k4' },
-  { name: 'Cardio', url: 'https://www.youtube.com/embed/9psH-BsJ_IM' },
+  { 
+    name: 'Bodyweight', 
+    url: 'https://www.youtube.com/embed/30PqX2zvK88',
+    bgColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+  },
+  { 
+    name: 'AB Workouts', 
+    url: 'https://www.youtube.com/embed/BdhqubW1GJE',
+    bgColor: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+  },
+  { 
+    name: 'Chest', 
+    url: 'https://www.youtube.com/embed/Epit6DSq_ww',
+    bgColor: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+  },
+  { 
+    name: 'Legs', 
+    url: 'https://www.youtube.com/embed/q7rCeOa_m58',
+    bgColor: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
+  },
+  { 
+    name: 'Arms', 
+    url: 'https://www.youtube.com/embed/KIvTY1KqCH4',
+    bgColor: 'linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)'
+  },
+  { 
+    name: 'Shoulder', 
+    url: 'https://www.youtube.com/embed/boUVD0pCGCk',
+    bgColor: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)'
+  },
+  { 
+    name: 'Back', 
+    url: 'https://www.youtube.com/embed/zgfcOWuTeYA',
+    bgColor: 'linear-gradient(135deg, #ffc3a0 0%, #ffafbd 100%)'
+  },
+  { 
+    name: 'Fat Loss', 
+    url: 'https://www.youtube.com/embed/_knIf9vF4k4',
+    bgColor: 'linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%)'
+  },
+  { 
+    name: 'Cardio', 
+    url: 'https://www.youtube.com/embed/9psH-BsJ_IM',
+    bgColor: 'linear-gradient(135deg, #a6c1ee 0%, #fbc2eb 100%)'
+  },
 ];
 
 const WorkoutPage = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   const handleVideoClick = (url) => {
     setSelectedVideo(url);
@@ -27,113 +69,166 @@ const WorkoutPage = () => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        margin: '0',
-        fontFamily: 'Arial, sans-serif',
-        backgroundColor: '#212121',
-      }}
-    >
+    <div style={{
+      height: '100vh',
+      overflow: 'hidden',
+      backgroundColor: '#f8fafc',
+      fontFamily: "'Poppins', sans-serif",
+      position: 'relative'
+    }}>
       <Header />
-      <div style={{ textAlign: 'center', width: '80%', maxWidth: '1200px', marginTop: '80px' }}>
-        <h1 style={{ color: '#fff', fontSize: '4rem', marginBottom: '40px' }}>
-          Workout Categories for Men
+      
+      <div style={{
+        padding: '2rem',
+        maxWidth: '1400px',
+        margin: '0 auto',
+        marginTop: '80px',
+        height: 'calc(100vh - 80px)',
+        overflow: 'auto'
+      }}>
+        <h1 style={{
+          color: '#1a202c',
+          fontSize: '2.5rem',
+          fontWeight: '700',
+          marginBottom: '2rem',
+          textAlign: 'center'
+        }}>
+          Workout Programs for Men
         </h1>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '30px',
-            width: '100%',
-          }}
-        >
+        
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: '2rem',
+          marginTop: '2rem'
+        }}>
           {categories.map((category, index) => (
             <div
               key={index}
               style={{
-                padding: '40px',
-                backgroundColor: '#f0f0f0',
-                borderRadius: '12px',
-                boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
-                width: '100%',
-                textAlign: 'center',
-                fontSize: '1.5rem',
+                background: category.bgColor,
+                borderRadius: '16px',
+                padding: '2.5rem',
+                boxShadow: '0 10px 20px rgba(0,0,0,0.1)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                cursor: 'pointer',
+                minHeight: '175px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 15px 30px rgba(0,0,0,0.2)'
+                }
               }}
+              onClick={() => handleVideoClick(category.url)}
             >
-              <h3 style={{ fontSize: '2rem', color: '#007bff' }}>{category.name}</h3>
+              <h3 style={{
+                color: 'white',
+                fontSize: '1.75rem',
+                fontWeight: '600',
+                marginBottom: '1.5rem',
+                textShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                textAlign: 'center'
+              }}>
+                {category.name}
+              </h3>
               <button
                 style={{
-                  padding: '20px 30px',
-                  fontSize: '1.5rem',
-                  backgroundColor: '#007bff',
-                  color: '#fff',
+                  padding: '0.75rem 1.75rem',
+                  backgroundColor: 'white',
+                  color: '#1a202c',
                   border: 'none',
-                  borderRadius: '8px',
+                  borderRadius: '50px',
+                  fontWeight: '600',
+                  fontSize: '1.1rem',
                   cursor: 'pointer',
-                  transition: 'background-color 0.3s, transform 0.3s',
+                  transition: 'all 0.3s ease',
+                  ':hover': {
+                    transform: 'scale(1.05)',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.1)'
+                  }
                 }}
-                onMouseEnter={(e) => {
-                  e.target.style.transform = 'scale(1.1)';
-                  e.target.style.backgroundColor = '#0056b3';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.transform = 'scale(1)';
-                  e.target.style.backgroundColor = '#007bff';
-                }}
-                onClick={() => handleVideoClick(category.url)}
               >
-                {selectedVideo === category.url ? 'Close Video' : 'Watch Video'}
+                Watch Video
               </button>
             </div>
           ))}
         </div>
 
         {selectedVideo && (
-          <div
-            style={{
-              position: 'fixed',
-              top: '20%',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              backgroundColor: '#fff',
-              padding: '20px',
-              borderRadius: '8px',
-              boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
-              zIndex: 1000,
-              width: '80%',
-              maxWidth: '800px',
-              transition: 'transform 0.5s ease-in-out',
-            }}
-          >
-            <iframe
-              width="100%"
-              height="450"
-              src={selectedVideo}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="Embedded Video"
-            ></iframe>
-            <button
-              onClick={closeVideo}
-              style={{
-                marginTop: '20px',
-                padding: '10px',
-                fontSize: '1.5rem',
-                backgroundColor: '#ff0000',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                transition: 'background-color 0.3s',
-              }}
-            >
-              Close Video
-            </button>
+          <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0,0,0,0.9)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 1000,
+            padding: '2rem'
+          }}>
+            <div style={{
+              width: '100%',
+              maxWidth: '900px',
+              backgroundColor: 'white',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              boxShadow: '0 20px 50px rgba(0,0,0,0.4)',
+              position: 'relative'
+            }}>
+              <div style={{
+                position: 'relative',
+                paddingBottom: '56.25%',
+                height: 0
+              }}>
+                <iframe
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    border: 'none'
+                  }}
+                  src={selectedVideo}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded Video"
+                ></iframe>
+              </div>
+              <button
+                onClick={closeVideo}
+                style={{
+                  position: 'absolute',
+                  top: '1.5rem',
+                  right: '1.5rem',
+                  backgroundColor: 'rgba(0,0,0,0.7)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '50%',
+                  width: '40px',
+                  height: '40px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold',
+                  transition: 'all 0.3s ease',
+                  ':hover': {
+                    transform: 'scale(1.1)',
+                    backgroundColor: 'rgba(0,0,0,0.9)'
+                  }
+                }}
+                aria-label="Close video"
+              >
+                ×
+              </button>
+            </div>
           </div>
         )}
       </div>

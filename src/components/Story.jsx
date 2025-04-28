@@ -1,19 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Editor from 'react-simple-wysiwyg';
-import './Story.css'
-import { useEffect } from 'react';
+import './Story.css';
 
-export const Story=({setStory,uploaded,story})=> {
-  const [html, setHtml] = useState('írj...');
+export const Story = ({ setStory, uploaded, story }) => {
+  const [html, setHtml] = useState(story || '<p style="color: #999;">Write your story here...</p>');
 
-  useEffect(()=>{
-    setHtml(story)
-  },[story])
+  useEffect(() => {
+    setHtml(story || '<p style="color: #999;">Write your story here...</p>');
+  }, [story]);
+
+  useEffect(() => {
+    if (uploaded) {
+      setHtml('<p style="color: #999;">Write your story here...</p>');
+    }
+  }, [uploaded]);
 
   return (
-    
-    <Editor value={html} onChange={(e)=>setHtml(e.target.value)} 
-        onBlur={()=>setStory(html)}
-    />
+    <div className="dark-editor-container">
+      <Editor
+        value={html}
+        onChange={(e) => {
+          setHtml(e.target.value);
+          setStory(e.target.value);
+        }}
+        containerProps={{
+          className: 'dark-wysiwyg-container'
+        }}
+      />
+    </div>
   );
-}
+};

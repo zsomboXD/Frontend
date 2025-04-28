@@ -7,3 +7,87 @@
     max-width: 800px;
     margin: auto;
 }
+.dark-editor-container {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-wysiwyg-container {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.dark-wysiwyg-container .swe-container {
+  border: none;
+  background-color: #1a1a1a;
+}
+
+.dark-wysiwyg-container .swe-toolbar {
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #333;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.dark-wysiwyg-container .swe-button {
+  background-color: #333;
+  color: #eee;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dark-wysiwyg-container .swe-button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dark-wysiwyg-container .swe-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dark-wysiwyg-container .swe-editor {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  min-height: 200px;
+  padding: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dark-wysiwyg-container .swe-editor:focus {
+  outline: none;
+}
+
+.dark-wysiwyg-container .swe-editor a {
+  color: #4CAF50;
+}
+
+.dark-wysiwyg-container .swe-editor blockquote {
+  border-left: 3px solid #4CAF50;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  color: #aaa;
+}
+
+.dark-wysiwyg-container .swe-dropdown {
+  background-color: #333;
+  border: none;
+  color: #eee;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.dark-wysiwyg-container .swe-editor [data-placeholder]:empty:before {
+  content: attr(data-placeholder);
+  color: #666;
+  font-style: italic;
+}

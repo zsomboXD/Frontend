@@ -4,7 +4,7 @@ import { Header } from '../components/Header';
 import '../style.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDumbbell, faChartLine, faBullseye } from '@fortawesome/free-solid-svg-icons';
+import { faDumbbell, faChartLine, faBullseye, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export const Home = () => {
   return (
@@ -54,11 +54,17 @@ export const Home = () => {
                }}>
               Track your workouts, monitor progress, and stay motivated on your fitness journey.
             </p>
-            <Button color="primary" size="lg" href="/auth" 
-                    className="px-4 py-2 mx-auto" 
-                    style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}>
-              Get Started
-            </Button>
+            <a href="#bottom-section" className="d-block mx-auto" style={{ color: 'white', textDecoration: 'none' }}>
+              <FontAwesomeIcon 
+                icon={faArrowDown} 
+                size="3x" 
+                className="mt-4 animate-bounce" 
+                style={{
+                  animation: 'bounce 2s infinite',
+                  cursor: 'pointer'
+                }} 
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -143,11 +149,11 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="text-center py-5" style={{ backgroundColor: '#1a1a1a' }}>
+      <section id="bottom-section" className="text-center py-5" style={{ backgroundColor: '#1a1a1a' }}>
         <h2 className="mb-4" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}>
           Ready to Get Fit?
         </h2>
-        <Link to="/Signup">
+        <Link to='/auth/up' >
           <Button color="success" size="lg" className="px-4 py-2" style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}>
             Join Now
           </Button>
